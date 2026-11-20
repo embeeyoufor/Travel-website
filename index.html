@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wander Co. — Find Your Way to Wonder</title>
+  <meta name="description" content="Wander Co. designs meaningful, nature-inspired journeys for curious travellers — from Kyoto's lantern-lit lanes to the islands of Raja Ampat." />
+  <meta name="theme-color" content="#183D32" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23183D32'/%3E%3Cpath d='M8 27l8-10 5 6 4-4 7 8' fill='none' stroke='%23F5F3EA' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='12' r='2.5' fill='%23D5B477'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Wander Co. — back to top">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <path d="M8 27l8-10 5 6 4-4 7 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+          <circle cx="27" cy="12" r="2.4" class="logo__sun" />
+        </svg>
+        <span class="logo__word">Wander <em>Co.</em></span>
+      </a>
+
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#destinations" class="nav__link">Destinations</a></li>
+        <li><a href="#experiences" class="nav__link">Experiences</a></li>
+        <li><a href="#about" class="nav__link">About Us</a></li>
+        <li class="nav__mobile-cta"><a href="#destinations" class="btn btn--gold">Explore Trips</a></li>
+      </ul>
+
+      <a href="#destinations" class="btn btn--outline-light nav__cta">Explore Trips</a>
+
+      <button class="nav__toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80"
+          srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=75 800w,
+                  https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80 1600w,
+                  https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2400&q=80 2400w"
+          sizes="100vw"
+          alt=""
+          fetchpriority="high" />
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow eyebrow--light reveal">Journeys for the curious</p>
+        <h1 class="hero__title reveal" id="hero-title">Find Your Way to <em>Wonder.</em></h1>
+        <p class="hero__text reveal">Discover extraordinary destinations, unforgettable experiences and journeys worth remembering.</p>
+        <div class="hero__actions reveal">
+          <a href="#destinations" class="btn btn--gold">Explore Destinations</a>
+          <a href="#about" class="btn btn--ghost-light">Discover Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero__footer container">
+        <a href="#destinations" class="hero__scroll" aria-label="Scroll to destinations">
+          <span class="hero__scroll-line" aria-hidden="true"></span> Scroll
+        </a>
+        <p class="hero__caption">Lago di Braies, Dolomites — 46.69° N, 12.08° E</p>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section destinations" id="destinations" aria-labelledby="dest-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <div>
+            <p class="eyebrow">Featured Destinations</p>
+            <h2 class="section-title" id="dest-title">Places that stay with you <em>long after</em> you leave.</h2>
+          </div>
+          <p class="section-intro">Six landscapes we return to again and again — each one chosen for its character, its stories and the way it changes how you see the world.</p>
+        </div>
+
+        <div class="dest-grid">
+          <article class="dest-card reveal">
+            <a href="#" class="dest-card__media" data-destination="kyoto" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
+                   srcset="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=500&q=75 500w,
+                           https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80 800w,
+                           https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80 1200w"
+                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                   alt="Traditional wooden houses lining a stone lane toward Yasaka Pagoda in Kyoto at dusk"
+                   loading="lazy" />
+              <span class="dest-card__coords">35.01° N · 135.77° E</span>
+            </a>
+            <div class="dest-card__body">
+              <p class="dest-card__country">Japan</p>
+              <h3 class="dest-card__name">Kyoto</h3>
+              <p class="dest-card__text">Lantern-lit lanes, moss gardens and centuries-old temples where tradition moves at its own unhurried pace.</p>
+              <a href="#" class="link-arrow" data-destination="kyoto">Explore Destination <span aria-hidden="true">→</span><span class="sr-only"> — Kyoto</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card reveal">
+            <a href="#" class="dest-card__media" data-destination="bali" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                   srcset="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=75 500w,
+                           https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80 800w,
+                           https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80 1200w"
+                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                   alt="Pura Ulun Danu Beratan temple reflected in a misty lake in Bali"
+                   loading="lazy" />
+              <span class="dest-card__coords">8.27° S · 115.17° E</span>
+            </a>
+            <div class="dest-card__body">
+              <p class="dest-card__country">Indonesia</p>
+              <h3 class="dest-card__name">Bali</h3>
+              <p class="dest-card__text">Lake temples, terraced rice fields and volcanic highlands wrapped in a gentle, spiritual rhythm.</p>
+              <a href="#" class="link-arrow" data-destination="bali">Explore Destination <span aria-hidden="true">→</span><span class="sr-only"> — Bali</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card reveal">
+            <a href="#" class="dest-card__media" data-destination="swiss-alps" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80"
+                   srcset="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=500&q=75 500w,
+                           https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80 800w,
+                           https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80 1200w"
+                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                   alt="Alpine village of Lauterbrunnen beneath sheer cliffs and snow-capped peaks"
+                   loading="lazy" />
+              <span class="dest-card__coords">46.59° N · 7.91° E</span>
+            </a>
+            <div class="dest-card__body">
+              <p class="dest-card__country">Switzerland</p>
+              <h3 class="dest-card__name">Swiss Alps</h3>
+              <p class="dest-card__text">Waterfall-laced valleys, timber villages and high trails beneath some of Europe's most dramatic peaks.</p>
+              <a href="#" class="link-arrow" data-destination="swiss-alps">Explore Destination <span aria-hidden="true">→</span><span class="sr-only"> — Swiss Alps</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card reveal">
+            <a href="#" class="dest-card__media" data-destination="cappadocia" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&fit=crop&w=800&q=80"
+                   srcset="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&fit=crop&w=500&q=75 500w,
+                           https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&fit=crop&w=800&q=80 800w,
+                           https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&fit=crop&w=1200&q=80 1200w"
+                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                   alt="Hot-air balloons drifting over the rock formations of Cappadocia"
+                   loading="lazy" />
+              <span class="dest-card__coords">38.64° N · 34.83° E</span>
+            </a>
+            <div class="dest-card__body">
+              <p class="dest-card__country">Türkiye</p>
+              <h3 class="dest-card__name">Cappadocia</h3>
+              <p class="dest-card__text">Fairy chimneys, cave dwellings and dawn skies filled with drifting hot-air balloons.</p>
+              <a href="#" class="link-arrow" data-destination="cappadocia">Explore Destination <span aria-hidden="true">→</span><span class="sr-only"> — Cappadocia</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card reveal">
+            <a href="#" class="dest-card__media" data-destination="queenstown" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=800&q=80"
+                   srcset="https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=500&q=75 500w,
+                           https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=800&q=80 800w,
+                           https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1200&q=80 1200w"
+                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                   alt="Lake Wakatipu and surrounding mountains near Queenstown under drifting cloud"
+                   loading="lazy" />
+              <span class="dest-card__coords">45.03° S · 168.66° E</span>
+            </a>
+            <div class="dest-card__body">
+              <p class="dest-card__country">New Zealand</p>
+              <h3 class="dest-card__name">Queenstown</h3>
+              <p class="dest-card__text">Glacial lakes and rugged ranges on the South Island, made for both stillness and a little thrill.</p>
+              <a href="#" class="link-arrow" data-destination="queenstown">Explore Destination <span aria-hidden="true">→</span><span class="sr-only"> — Queenstown</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card reveal">
+            <a href="#" class="dest-card__media" data-destination="raja-ampat" tabindex="-1" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=800&q=80"
+                   srcset="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=500&q=75 500w,
+                           https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=800&q=80 800w,
+                           https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=1200&q=80 1200w"
+                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 30vw"
+                   alt="Green karst islands rising from a turquoise lagoon in Raja Ampat"
+                   loading="lazy" />
+              <span class="dest-card__coords">0.50° S · 130.60° E</span>
+            </a>
+            <div class="dest-card__body">
+              <p class="dest-card__country">Indonesia</p>
+              <h3 class="dest-card__name">Raja Ampat</h3>
+              <p class="dest-card__text">Remote karst islands and turquoise lagoons in one of the planet's richest marine environments.</p>
+              <a href="#" class="link-arrow" data-destination="raja-ampat">Explore Destination <span aria-hidden="true">→</span><span class="sr-only"> — Raja Ampat</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCES ============ -->
+    <section class="section experiences" id="experiences" aria-labelledby="exp-title">
+      <svg class="topo topo--experiences" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+        <use href="#topo-lines" />
+      </svg>
+      <div class="container">
+        <div class="section-head section-head--light reveal">
+          <span class="section-index">02</span>
+          <div>
+            <p class="eyebrow eyebrow--gold">Travel Experiences</p>
+            <h2 class="section-title" id="exp-title">Choose the kind of <em>wonder</em> you're after.</h2>
+          </div>
+          <p class="section-intro">Every journey begins with a feeling. Start with the one that calls to you and we'll shape the rest around it.</p>
+        </div>
+
+        <div class="exp-panels reveal" role="list">
+          <article class="exp-panel is-active" role="listitem" tabindex="0">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1100&q=80"
+                 srcset="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=75 600w,
+                         https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1100&q=80 1100w"
+                 sizes="(max-width: 900px) 92vw, 50vw"
+                 alt="A lone hiker standing on a rock above a misty green valley" loading="lazy" />
+            <div class="exp-panel__inner">
+              <span class="exp-panel__num">i.</span>
+              <h3 class="exp-panel__title">Nature &amp; Adventure</h3>
+              <div class="exp-panel__detail">
+                <p>Hike ridgelines, paddle quiet lakes and sleep closer to the wild — journeys shaped by the landscape itself.</p>
+                <p class="exp-panel__tags">Trekking · Kayaking · Wildlife</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-panel" role="listitem" tabindex="0">
+            <img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1100&q=80"
+                 srcset="https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=600&q=75 600w,
+                         https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1100&q=80 1100w"
+                 sizes="(max-width: 900px) 92vw, 50vw"
+                 alt="Minarets and domes of the Blue Mosque in Istanbul beneath a pink evening sky" loading="lazy" />
+            <div class="exp-panel__inner">
+              <span class="exp-panel__num">ii.</span>
+              <h3 class="exp-panel__title">Cultural Exploration</h3>
+              <div class="exp-panel__detail">
+                <p>Wander old quarters, share tables with local hosts and discover the stories held in a place's art, food and faith.</p>
+                <p class="exp-panel__tags">Heritage · Cuisine · Craft</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-panel" role="listitem" tabindex="0">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1100&q=80"
+                 srcset="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=75 600w,
+                         https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1100&q=80 1100w"
+                 sizes="(max-width: 900px) 92vw, 50vw"
+                 alt="Gentle waves washing over a sandy beach at sunset" loading="lazy" />
+            <div class="exp-panel__inner">
+              <span class="exp-panel__num">iii.</span>
+              <h3 class="exp-panel__title">Beach Escapes</h3>
+              <div class="exp-panel__detail">
+                <p>Slow mornings, warm water and island light — coastal retreats designed for rest and reconnection.</p>
+                <p class="exp-panel__tags">Islands · Snorkelling · Slow Days</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp-panel" role="listitem" tabindex="0">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1100&q=80"
+                 srcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=75 600w,
+                         https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1100&q=80 1100w"
+                 sizes="(max-width: 900px) 92vw, 50vw"
+                 alt="Snowy mountain peaks rising above a sea of clouds at sunset" loading="lazy" />
+            <div class="exp-panel__inner">
+              <span class="exp-panel__num">iv.</span>
+              <h3 class="exp-panel__title">Mountain Retreats</h3>
+              <div class="exp-panel__detail">
+                <p>Crisp air, alpine trails and cosy lodges above the clouds, where every view asks you to stay a little longer.</p>
+                <p class="exp-panel__tags">Alpine Lodges · Hiking · Stillness</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY TRAVEL WITH US ============ -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <div>
+            <p class="eyebrow">Why Travel With Us?</p>
+            <h2 class="section-title" id="why-title">Thoughtful by design. <em>Yours</em> by nature.</h2>
+          </div>
+        </div>
+
+        <ul class="why-grid">
+          <li class="why-item reveal">
+            <svg class="why-item__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="19" />
+              <path d="M24 5v4M24 39v4M5 24h4M39 24h4" />
+              <path d="M30.5 17.5l-4 9-9 4 4-9z" />
+            </svg>
+            <h3 class="why-item__title">Carefully Curated Journeys</h3>
+            <p>Every itinerary is shaped around fewer places and deeper moments — thoughtfully paced, never rushed.</p>
+          </li>
+          <li class="why-item reveal">
+            <svg class="why-item__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 43s-14-11.5-14-23a14 14 0 0 1 28 0c0 11.5-14 23-14 23z" />
+              <circle cx="24" cy="20" r="5" />
+            </svg>
+            <h3 class="why-item__title">Authentic Local Experiences</h3>
+            <p>We seek out the guides, hosts and small businesses who know a place best — and care for it most.</p>
+          </li>
+          <li class="why-item reveal">
+            <svg class="why-item__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M6 11l11-4 14 5 11-4v29l-11 4-14-5-11 4z" />
+              <path d="M17 7v29M31 12v29" />
+            </svg>
+            <h3 class="why-item__title">Personalised Travel Planning</h3>
+            <p>Your interests, pace and travel style come first. No two Wander Co. journeys need to look the same.</p>
+          </li>
+          <li class="why-item reveal">
+            <svg class="why-item__icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M4 40l13-18 8 10 6-7 13 15z" />
+              <path d="M17 22l3 6M31 25l-2 5" />
+              <circle cx="36" cy="11" r="4" />
+            </svg>
+            <h3 class="why-item__title">Memorable Adventures</h3>
+            <p>From sunrise summits to quiet village evenings, we design for the moments you'll keep talking about.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <figure class="about__media reveal">
+          <img class="about__img-main"
+               src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80"
+               srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=75 600w,
+                       https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80 1000w,
+                       https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80 1400w"
+               sizes="(max-width: 900px) 92vw, 46vw"
+               alt="Evergreen forest in front of a wide valley and snow-capped mountain range"
+               loading="lazy" />
+          <img class="about__img-inset"
+               src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?auto=format&fit=crop&w=500&q=80"
+               alt="Mountain peak glowing at sunrise above a still alpine pond, framed by a weathered tree stump"
+               loading="lazy" />
+          <figcaption class="about__badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="badge-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" /></defs>
+              <text><textPath href="#badge-circle" textLength="286" lengthAdjust="spacing">Slower · Deeper · Kinder · Wander ·</textPath></text>
+            </svg>
+            <span>W</span>
+          </figcaption>
+        </figure>
+
+        <div class="about__content">
+          <span class="section-index reveal">04</span>
+          <p class="eyebrow reveal">About Wander Co.</p>
+          <h2 class="section-title reveal" id="about-title">More Than Just a <em>Destination.</em></h2>
+          <p class="about__lead reveal">Wander Co. is built for curious travellers who want to experience the world beyond the ordinary. We believe every journey should be meaningful, memorable and uniquely yours.</p>
+          <p class="reveal">Our story begins with a simple idea: the best journeys aren't measured in miles or checklists, but in the moments that stay with you long after you return home. A conversation over tea with a local host. The hush of a valley before sunrise. A path you didn't plan to take.</p>
+
+          <ul class="principles reveal">
+            <li><span>Travel slower</span> — fewer stops, more time to truly arrive.</li>
+            <li><span>Travel deeper</span> — local knowledge over tourist trails.</li>
+            <li><span>Travel kinder</span> — respect for the places and people we visit.</li>
+          </ul>
+
+          <a href="#newsletter" class="btn btn--forest reveal">Begin Your Journey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="section newsletter" id="newsletter" aria-labelledby="news-title">
+      <div class="container">
+        <div class="newsletter__panel reveal">
+          <svg class="topo topo--news" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <use href="#topo-lines" />
+          </svg>
+          <div class="newsletter__copy">
+            <p class="eyebrow eyebrow--gold">The Wander Letter</p>
+            <h2 class="newsletter__title" id="news-title">A Little Inspiration for Your <em>Next Journey.</em></h2>
+            <p>Get travel inspiration, destination guides and special updates delivered to your inbox.</p>
+          </div>
+
+          <form class="newsletter__form" id="newsletter-form" novalidate>
+            <label for="email" class="sr-only">Email address</label>
+            <div class="newsletter__field">
+              <input type="email" id="email" name="email" placeholder="Your email address" autocomplete="email" aria-describedby="email-msg" required />
+              <button type="submit" class="btn btn--gold">Subscribe</button>
+            </div>
+            <p class="newsletter__msg" id="email-msg" role="status" aria-live="polite"></p>
+            <p class="newsletter__note">No spam — just good stories. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--light" aria-label="Wander Co. — back to top">
+          <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5" />
+            <path d="M8 27l8-10 5 6 4-4 7 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" />
+            <circle cx="27" cy="12" r="2.4" class="logo__sun" />
+          </svg>
+          <span class="logo__word">Wander <em>Co.</em></span>
+        </a>
+        <p>Meaningful journeys for curious travellers — crafted around nature, culture and the moments worth remembering.</p>
+        <ul class="footer__social" aria-label="Social media">
+          <li>
+            <a href="#" data-placeholder aria-label="Instagram (placeholder link)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-placeholder aria-label="Pinterest (placeholder link)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M10.5 20l2-8.5M10 13.5c.6 1.3 1.6 2 2.8 2 2.2 0 3.7-2 3.7-4.5S14.6 7 12.2 7 7.5 8.7 7.5 11c0 .9.3 1.7.8 2.2" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-placeholder aria-label="YouTube (placeholder link)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" /><path d="M10 9.5v5l4.5-2.5z" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-placeholder aria-label="Facebook (placeholder link)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.5h-3a4 4 0 0 0-4 4V11H7.5v3.5H10V21h3.5v-6.5H16l.5-3.5h-3V8.8c0-.5.2-.8.5-.8z" /></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer">
+        <h3 class="footer__heading">Explore</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Contact</h3>
+        <address>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li>+00 (0)00 0000 0000</li>
+            <li>Studio address placeholder,<br />City, Country</li>
+          </ul>
+        </address>
+        <p class="footer__hint">Placeholder details — replace with real contact information.</p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Wander Co. All rights reserved.</p>
+      <p>Photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ DESTINATION DIALOG ============ -->
+  <dialog class="dest-dialog" id="dest-dialog" aria-labelledby="dialog-title">
+    <div class="dest-dialog__inner">
+      <button class="dest-dialog__close" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+      <div class="dest-dialog__media"><img src="" alt="" id="dialog-img" /></div>
+      <div class="dest-dialog__body">
+        <p class="eyebrow" id="dialog-country"></p>
+        <h2 class="dest-dialog__title" id="dialog-title"></h2>
+        <p class="dest-dialog__text" id="dialog-text"></p>
+        <dl class="dest-dialog__facts">
+          <div><dt>Best time to visit</dt><dd id="dialog-season"></dd></div>
+          <div><dt>Ideal for</dt><dd id="dialog-ideal"></dd></div>
+        </dl>
+        <h3 class="dest-dialog__subhead">Moments to look for</h3>
+        <ul class="dest-dialog__list" id="dialog-highlights"></ul>
+        <a href="#newsletter" class="btn btn--forest" id="dialog-cta">Get Destination Guides</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Reusable topographic contour pattern -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="topo-lines" fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M300 90c90 0 170 50 190 130s-20 170-110 200-200 10-250-60-40-170 30-230c40-30 90-40 140-40z" />
+        <path d="M300 130c70 0 135 40 150 105s-15 135-90 160-160 5-200-50-30-135 25-185c30-22 70-30 115-30z" />
+        <path d="M300 170c55 0 100 30 112 80s-12 100-68 120-120 4-150-38-22-100 18-138c25-17 55-24 88-24z" />
+        <path d="M298 210c35 0 65 20 73 52s-8 65-45 78-78 2-98-25-14-65 12-90c16-11 36-15 58-15z" />
+        <path d="M296 248c18 0 33 10 37 27s-4 33-23 40-40 1-50-13-7-33 6-46c8-6 18-8 30-8z" />
+        <path d="M300 50c110 0 205 60 230 160s-25 210-135 245-245 15-305-75-50-210 40-280c50-38 105-50 170-50z" />
+        <path d="M300 10c130 0 245 72 275 190s-30 250-160 290-290 18-360-88-60-250 45-330c60-45 125-62 200-62z" />
+      </g>
+    </defs>
+  </svg>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
